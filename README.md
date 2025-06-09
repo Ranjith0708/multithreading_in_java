@@ -1,15 +1,8 @@
-# Multithrea## 3. Key Points in Concurrency and Parallelism
+# Multithreading
 
-### Concurrency — "Switching between tasks"
-* Can happen even with one core
-* You can have many threads, but only one is executing at a time
-* CPU switches between threads rapidly (context switching)
-* Looks like everything is running at once, but it's not
-
-### Parallelism — "Running tasks at the same time"
-* Requires multiple cores (or multiple processors)
-* Each core can run a thread truly at the same time
-* So, threads are not just switching, they're really working in parallelva
+## About this Repo
+* This repository is maintained by me to track and update daily learnings on multithreading concepts in Java.
+* It serves as a personal knowledge base to document what I read, practice, and understand each day as part of my learning.
 
 ## 1. What is Multithreading?
 Multithreading is the ability of a program to run multiple threads concurrently. Each thread is a separate path of execution, allowing the CPU to manage and run tasks more efficiently. This can improve performance by doing tasks either concurrently (switching between tasks) or in parallel (running tasks truly at the same time, if multiple cores are available).
@@ -31,6 +24,19 @@ Parallelism means executing multiple tasks at the exact same time using multiple
         a.)Requires multiple cores (or multiple processors).
         b.)Each core can run a thread truly at the same time.
         c.)So, threads are not just switching, they’re really working in parallel
+
+## 3. Key Points in Concurrency and Parallelism
+
+### Concurrency — "Switching between tasks"
+* Can happen even with one core
+* You can have many threads, but only one is executing at a time
+* CPU switches between threads rapidly (context switching)
+* Looks like everything is running at once, but it's not
+
+### Parallelism — "Running tasks at the same time"
+* Requires multiple cores (or multiple processors)
+* Each core can run a thread truly at the same time
+* So, threads are not just switching, they're really working in parallelva
 ## 4. Process and Threads
 
 ### Process
