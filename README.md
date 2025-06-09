@@ -1,1 +1,28 @@
 # multithreading_in_java
+1.What is Multithreading?
+    Multithreading is the ability of a program to run multiple threads concurrently. Each thread is a separate path of execution, allowing the CPU to manage and run tasks more efficiently. This can improve performance by doing tasks either concurrently (switching between tasks) or in parallel (running tasks truly at the same time, if multiple cores are available).
+2.Concurrency vs Parallelism
+    Concurrency : 
+     Concurrency means executing multiple tasks by interleaving their execution on a single core. Only one task runs at a time, but the system switches between them quickly, so it appears they are running at the same time.
+    Parallelism : 
+     Parallelism means executing multiple tasks at the exact same time using multiple threads on multiple cores. Each thread runs independently and truly in parallel.
+3.KeyPoints in Concurrency and Parallelism :
+     Concurrency — "Switching between tasks" :
+        a.)Can happen even with one core.
+        b.)You can have many threads, but only one is executing at a time.
+        c.)CPU switches between threads rapidly (context switching).
+        Looks like everything is running at once, but it's not.
+     Parallelism — "Running tasks at the same time" :
+        a.)Requires multiple cores (or multiple processors).
+        b.)Each core can run a thread truly at the same time.
+        c.)So, threads are not just switching, they’re really working in parallel
+4.Process and Threads : 
+     Process :   
+       An instance of a program execution.When you open an app that is called process.It starts running and OS will assign its stack and heap area to it.
+     Threads : 
+        Threads are smaller piece of process which executes inside the program.A single process can contain multiplen thread each thread shares same space,resources and memory of the process.
+5.Time Slicing Algorithm :
+     a.)Time slicing algorithm is a mechanism where it assigns time to the threads to run on CPU.Once the allocated time is over it will switch to other thread even the task is not completed by previous thread.This makes it look like all threads are running simultaneously.
+     b.)This algorithm is part of preemptive multitasking, and it's managed by the operating system scheduler, not directly by the Java program.
+
+     NOTE : Preemptive multitasking is a CPU scheduling method where the operating system has the power to interrupt (preempt) a currently running task (thread or process) and switch to another task, even if the current task hasn't finished.
